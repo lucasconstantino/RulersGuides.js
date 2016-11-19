@@ -1196,6 +1196,7 @@ const initialized = false
 
 const attach = () => {
   if (!initialized) {
+    initialized = true
     new RulersGuides(Event, Dragdrop)
   }
 }
