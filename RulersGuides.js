@@ -1,3 +1,7 @@
+
+const Event = require('./Event')
+const Dragdrop = require('./Dragdrop')
+
 /**
 * This Javascript package creates Photoshop-like guides and rulers interface on a web page.
 * Guides are created by click-and-dragging corresponding horizontal or vertical ruler.
@@ -41,7 +45,7 @@
 *
 * @author Mark Rolich <mark.rolich@gmail.com>
 */
-var RulersGuides = function (evt, dragdrop) {
+const RulersGuides = function (evt, dragdrop) {
     'use strict';
 
     var doc         = document.documentElement,
@@ -1187,3 +1191,14 @@ var RulersGuides = function (evt, dragdrop) {
         }
     });
 };
+
+const initialized = false
+
+const attach = () => {
+  if (!initialized) {
+    new RulersGuides(Event, Dragdrop)
+  }
+}
+
+module.exports = attach
+module.exports.attach = attach
