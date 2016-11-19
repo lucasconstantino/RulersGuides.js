@@ -1192,7 +1192,7 @@ const RulersGuides = function (evt, dragdrop) {
     });
 };
 
-const initialized = false
+let initialized = false
 
 const attach = () => {
   if (!initialized) {
