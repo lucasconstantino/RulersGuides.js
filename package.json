@@ -1,0 +1,24 @@
+{
+  "name": "ruler-guides",
+  "version": "1.0.0",
+  "description": "RulerGuides.js",
+  "main": "RulersGuides.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-rolich/RulersGuides.js.git"
+  },
+  "keywords": [
+    "ruler",
+    "guides",
+    "canvas"
+  ],
+  "author": "Mark Rolich <mark.rolich@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mark-rolich/RulersGuides.js/issues"
+  },
+  "homepage": "https://github.com/mark-rolich/RulersGuides.js#readme"
+}
