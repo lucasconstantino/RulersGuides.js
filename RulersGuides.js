@@ -1192,14 +1192,9 @@ const RulersGuides = function (evt, dragdrop) {
     });
 };
 
-let initialized = false
+let instance = false
 
-const attach = () => {
-  if (!initialized) {
-    initialized = true
-    new RulersGuides(Event, Dragdrop)
-  }
-}
+const attach = () => (instance = (instance || new RulersGuides(Event, Dragdrop)))
 
 module.exports = attach
 module.exports.attach = attach
